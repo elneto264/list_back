@@ -13,7 +13,10 @@ export interface CosaOpersona {
         [language:string]: string;
     };
     email:string;
-    image:string;
+    image:{
+        content:string,
+        description:string
+    };
     url: string;
     description:string;
 }
