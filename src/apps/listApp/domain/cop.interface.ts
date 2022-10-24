@@ -4,19 +4,19 @@
 export interface CosaOpersona {
     id:string;
     name: string;
-    weight:number;
-    price:number;
-    quantity: number;
-    country:string;
+    weight?:number;
+    price?:number;
+    quantity?: number;
+    country?:string;
     creationDate:string;
-    languages: {
+    languages?: {
         [language:string]: string;
     };
-    email:string;
-    image:{
+    email?:string;
+    image?:{
         content:string,
         description:string
     };
-    url: string;
+    url?: string;
     description:string;
 }
