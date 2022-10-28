@@ -16,7 +16,7 @@ export default class copRepositoryInMemory implements CosaOpersonaRepository {
         if(!this.memory.has(cop.id)){
             this.memory.set(cop.id,[])
         }
-        this.memory.set(cop.id,[...this.memory.get(cop.id)!, cop]);
+        this.memory.set(cop.id, [...this.memory.get(cop.id)!, cop]);
     }
 
 
