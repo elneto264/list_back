@@ -4,10 +4,15 @@ import express from 'express'
 export default class Server {
    app;
    port;
+   path;
    
     constructor(){
         this.app = express();
-        this.port = '8080'
+        this.port = '8080';
+
+        this.path = {
+            cop:'/api/v1/cop'
+        }
     }
 
 
